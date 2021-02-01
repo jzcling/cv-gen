@@ -1,0 +1,9 @@
+version: '3'
+services: 
+    cv-gen:
+        build: .
+        container_name: "cv-gen"
+        ports: 
+            - "8000:8080"
+        volumes:
+            - ./app/:/app
